@@ -1,0 +1,124 @@
+
+@font-face {
+  font-family: ipafont; 
+  src: url(EOutfit.woff2); 
+}
+@font-face {
+  font-family: normfont; 
+  src: url(Outfit.ttf); 
+}
+
+
+
+table.finals {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: large;
+  }
+
+table.finals td {
+  padding: 6px 10px;
+  text-align: right;
+  white-space: nowrap;
+}
+.tonesvg{
+    margin:0 auto;
+    display:block
+}
+
+.img {
+      margin:0 auto;
+    display:block;
+}
+
+html{
+    font-family: normfont, ipafont;
+    font-size: large;
+}
+.ipa{
+    font-family: ipafont;
+}
+.phono {
+      margin: 60px auto;
+      border: 2px solid;
+      border-radius: 6px;
+}
+table.phono td {
+  padding: 6px 10px;
+  text-align: center;
+}
+body {
+  margin: 0 auto;        
+  width: 70%;    
+  background-color: #fafafa;
+}
+
+.tone{
+  width:25px;
+}
+p,ul {
+margin-left:5%
+}
+.rising{
+  color: hsl(34,78%,65%);
+}
+.falling{
+  color: hsl(240,78%,65%);
+}
+.turn{
+  color: hsl(341,78%,65%);
+}
+.creaky{
+  color: hsl(285,78%,65%);
+}
+.glottal{
+  color: hsl(127,78%,65%);
+}
+.flat{
+  color: hsl(186,78%,65%);
+}
+
+.example {
+    padding:2%10%;
+}
+
+.gray{
+  color:grey;
+}
+.dictent {
+  margin:0 auto;
+  width: 40%;
+  border:solid #222;
+  padding: 20px;
+  background-color: hsla(127, 78%, 65%, 0.158);;
+}
+.wordhead{
+  padding: -10px;
+  display:flex;
+  justify-content: space-between;
+
+}
+.wordname{
+  font-weight: 700;
+  font-size:larger;
+}
+b,dt,.lyk{
+  font-weight: 700;
+}
+.define{
+margin-left:20px;
+margin-top:10px;
+}
+.slot{
+  display:inline;
+  border: 1px dashed;
+  padding: 1px;
+  background-color: hsla(127, 78%, 65%, 0.336);;
+}
+@media (max-width: 770px) {
+  body {
+    width: 90%;
+  }
+}
