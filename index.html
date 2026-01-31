@@ -529,7 +529,7 @@ zh
 <p>The object that the clause is attached to fills the first slot of the verb automatically. The head noun syntactically acts as if its arity is one less than its definition.</p>
 <p>If this is not wanted, the pronoun <b>hóu</b> can be used to explicitly place the object in the clause. This pronoun also causes the clause to terminate with the verb's normal arity. If relative clauses are nested, the deeper clause will be prioritized over which object the pronoun applies to and which gets to absorb it.</p>
 <p>For incidental relative clauses, the complementizer <b>jũ</b> is used.</p>
-<p>The <img src="tone/creaky.svg" class="tone"> tone on a determiner (<span class="lyk">sã míau</span>) or a pronoun (<span class="lyk">nõ</span>) indicates some type of association or ownership of the attached argument.</p>
+<p>The <img src="tone/creaky.svg" class="tone"> tone on a determiner (<span class="lyk">sã míau</span>) or a pronoun (<span class="lyk">nõ</span>) indicates some type of association or ownership of the attached argument. These aren't exacly relative clauses but they syntactically behave the same.</p>
 <div class="example">
     <p><span class="lyk">míau nõ</span>: my cat</p>
     <p><span class="lyk">chŕ ry bãn míau</span>: cat food</p>
@@ -713,7 +713,7 @@ zh
 <div class="example">
     <p><span class="lyk">ren sàn</span>: 3 people</p>
 </div>
-<p><img src="tone/flat.svg" class="tone"> makes it an ordinal.</p>
+<p><img src="tone/creaky.svg" class="tone"> makes it an ordinal.</p>
 <div class="example">
     <p><span class="lyk">ren sãn</span>: 3rd person</p>
 </div>
@@ -903,12 +903,12 @@ zh
 <p>Here is a dictionary entry of a verb:</p>
 <div class="dictent">
 <div class="wordhead"><div class="wordname">chr</div><div style="color:grey">verb</div></div>
-<div class="define"><div class="slot">o</div> eats <div class="slot">o</div>.</div>
+<div class="define"><div class="slot">t</div> eats <div class="slot">t</div>.</div>
 </div>
-<p>The "c" indicates that the slot takes an <b>object</b>. It's a way to say that only <b>objects</b> like "cat" or "dog" or "thing" can satisfy this spot. It is the slot's signature.</p>
+<p>The "c" indicates that the slot takes an <b>thing</b>. Only stuff like "cat" or "dog" or "thing" can satisfy this spot. It is the slot's signature.</p>
 <p>The types of signature are:</p>
 <ul>
-	<li>objects (o)</li>
+	<li>thing (t)</li>
 	<ul>
 		<li>míau</li>
 		<li>tú ren</li>
@@ -930,7 +930,7 @@ zh
 			<li>sëoı já já</li>
 		</ul>
 	</ul>
-	<li>quote (t)</li>
+	<li>quote (q)</li>
 	<ul>
 		<li>líok "Ieı sú!" líuk</li>
 		<li>líok te e heju te lĩuk</li>
@@ -939,8 +939,8 @@ zh
 <p>A verb can never have multiple arities, but it can have multiple definitions depending on the signatures of its slots.</p>
 <div class="dictent">
 <div class="wordhead"><div class="wordname">seoı</div><div style="color:grey">verb</div></div>
-<div class="define"><div class="slot">o</div> says <div class="slot">t</div>.</div>
-<div class="define"><div class="slot">o</div> talks about <div class="slot">o|x</div>.</div>
+<div class="define"><div class="slot">t</div> says <div class="slot">q</div>.</div>
+<div class="define"><div class="slot">q</div> talks about <div class="slot">t|x</div>.</div>
 </div>
 <p>If a verb receives arguments that no definition matches, the sentence is invalid.</p>
 <h3>Determiner clause</h3>
@@ -955,6 +955,24 @@ zh
 <p>For two verbs of arity >2, or the second one being unary, the second slot of the first word absorbs the first slot of the second verb.</p>
 <img src="tone/binary.svg" class="img" width="75%">
 <p>Serial verbs can be lexicalized by appending them. The language's name, Zulyk, comes from <span class="lyk">zu lỳk</span> "Zulykian Language".</p>
+<h3>Pronouns 2</h3>
+<dl class="def">
+	<dt>án</dt>
+	<dd>repeat first slot</dd>
+	<dt>át</dt>
+	<dd>repeat second slot</dd>
+	<dt>pújym</dt>
+	<dd>a previous utterance</dd>
+	<dt>bájym</dt>
+	<dd>a future utterance</dd>
+	<dt>cájym</dt>
+	<dd>this utterance</dd>
+</dl>
+<p><b>án</b> repeats the first slot's entity and <b>át</b> repeats the second slot's entity. They can be comparable to reflexive pronouns.</p>
+<div class="example">
+	<p><span class="lyk">Bak chí án</span>: You're looking at yourself.</p>
+	<p><span class="lyk">Lım naı nó séoı r ãn.</span>: I don't understand what I'm talking about.</p>
+</div>
 <hr>
 <center class="gray">version 0.1.0</center>
 <script src="js.js"></script>
