@@ -2003,5 +2003,31 @@ const DICT = [
         ]
       }
     ]
+  },
+  {
+    "name": "chek",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a flower.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ha",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is alive.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
   }
 ]
