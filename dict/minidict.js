@@ -215,7 +215,7 @@ const DICT = [
     ]
   },
   {
-    "name": "de",
+    "name": "t\u0131",
     "type": "verbtwo",
     "arity": "2",
     "defs": [
@@ -1985,6 +1985,21 @@ const DICT = [
         "def": "\u25af is a picture.",
         "sign": [
           "t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "de",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is beautiful.",
+        "sign": [
+          "t",
+          "x",
+          "q"
         ]
       }
     ]
