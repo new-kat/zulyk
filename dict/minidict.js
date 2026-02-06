@@ -1,4 +1,4 @@
-const DICT=[
+const DICT = [
   {
     "name": "a",
     "type": "concomp",
@@ -1939,7 +1939,7 @@ const DICT=[
   {
     "name": "uk\u0131y",
     "type": "verbone",
-    "arity": "2",
+    "arity": "1",
     "defs": [
       {
         "def": "\u25af is a message.",
@@ -1970,6 +1970,19 @@ const DICT=[
     "defs": [
       {
         "def": "\u25af waits.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gyr",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a picture.",
         "sign": [
           "t"
         ]
