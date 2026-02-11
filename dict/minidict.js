@@ -73,13 +73,26 @@ const DICT = [
   },
   {
     "name": "bak",
-    "type": "verbone",
+    "type": "verbtwo",
     "arity": "1",
     "defs": [
       {
         "def": "\u25af looks at \u25af.",
         "sign": [
           "tt"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bam",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af explodes.",
+        "sign": [
+          "t"
         ]
       }
     ]
@@ -121,11 +134,38 @@ const DICT = [
     ]
   },
   {
+    "name": "bek",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af waits.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
     "name": "b\u0131",
     "type": "number",
     "defs": [
       {
         "def": "one"
+      }
+    ]
+  },
+  {
+    "name": "b\u0131a",
+    "type": "verbtwo",
+    "arity": "2",
+    "defs": [
+      {
+        "def": "\u25af needs to satisfy property \u25af.",
+        "sign": [
+          "tx",
+          "tt"
+        ]
       }
     ]
   },
@@ -148,6 +188,20 @@ const DICT = [
     ]
   },
   {
+    "name": "bur",
+    "type": "verbtwo",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af acquires/gets \u25af",
+        "sign": [
+          "tt",
+          "tx"
+        ]
+      }
+    ]
+  },
+  {
     "name": "ca",
     "type": "tense",
     "defs": [
@@ -162,6 +216,19 @@ const DICT = [
     "defs": [
       {
         "def": "this utterance"
+      }
+    ]
+  },
+  {
+    "name": "chek",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a flower.",
+        "sign": [
+          "t"
+        ]
       }
     ]
   },
@@ -215,21 +282,16 @@ const DICT = [
     ]
   },
   {
-    "name": "t\u0131",
-    "type": "verbtwo",
-    "arity": "2",
+    "name": "de",
+    "type": "verbone",
+    "arity": "1",
     "defs": [
       {
-        "def": "\u25af is at \u25af.",
+        "def": "\u25af is beautiful.",
         "sign": [
-          "tt",
-          "0t"
-        ]
-      },
-      {
-        "def": "\u25af happens while \u25af happens.",
-        "sign": [
-          "xx"
+          "t",
+          "x",
+          "q"
         ]
       }
     ]
@@ -253,7 +315,7 @@ const DICT = [
     ]
   },
   {
-    "name": "ditnam",
+    "name": "d\u0131tnam",
     "type": "number",
     "defs": [
       {
@@ -298,7 +360,7 @@ const DICT = [
   },
   {
     "name": "esun",
-    "type": "int",
+    "type": "interjection",
     "defs": [
       {
         "def": "hello"
@@ -343,6 +405,15 @@ const DICT = [
     ]
   },
   {
+    "name": "gok",
+    "type": "verbone",
+    "defs": [
+      {
+        "def": "\u25af is blue."
+      }
+    ]
+  },
+  {
     "name": "gyn",
     "type": "verbone",
     "arity": "1",
@@ -362,8 +433,34 @@ const DICT = [
     ]
   },
   {
+    "name": "gyr",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a picture.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ha",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is alive.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
     "name": "ham",
-    "type": "verbtwo",
+    "type": "verbone",
     "arity": "1",
     "defs": [
       {
@@ -397,6 +494,29 @@ const DICT = [
     ]
   },
   {
+    "name": "h\u0131au",
+    "type": "verbtwo",
+    "arity": "2",
+    "defs": [
+      {
+        "def": "\u25af imagines \u25af.",
+        "sign": [
+          "tt",
+          "tx"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "hm",
+    "type": "interjection",
+    "defs": [
+      {
+        "def": "interjection: thinking"
+      }
+    ]
+  },
+  {
     "name": "hoa",
     "type": "pronoun",
     "defs": [
@@ -424,8 +544,17 @@ const DICT = [
     ]
   },
   {
+    "name": "\u0131au",
+    "type": "interjection",
+    "defs": [
+      {
+        "def": "aw... (sadness)"
+      }
+    ]
+  },
+  {
     "name": "\u0131e\u0131",
-    "type": "int",
+    "type": "interjection",
     "defs": [
       {
         "def": "yay!"
@@ -488,7 +617,7 @@ const DICT = [
   },
   {
     "name": "j\u0131r",
-    "type": "intmkr",
+    "type": "intjmkr",
     "defs": [
       {
         "def": "interjection maker"
@@ -580,6 +709,19 @@ const DICT = [
     ]
   },
   {
+    "name": "kat",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a layer.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
     "name": "ke",
     "type": "relcomp",
     "defs": [
@@ -664,6 +806,19 @@ const DICT = [
         "sign": [
           "tt",
           "tx"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "kyme",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a community.",
+        "sign": [
+          "t"
         ]
       }
     ]
@@ -794,6 +949,19 @@ const DICT = [
         "def": "is \u25af true?",
         "sign": [
           "0"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ma\u0131",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "I want \u25af to happen.",
+        "sign": [
+          "x"
         ]
       }
     ]
@@ -965,6 +1133,19 @@ const DICT = [
     ]
   },
   {
+    "name": "noet",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is an animal.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
     "name": "nome",
     "type": "pronoun",
     "defs": [
@@ -980,6 +1161,19 @@ const DICT = [
     "defs": [
       {
         "def": "\u25af is money.",
+        "sign": [
+          "t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "nyn",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af sleeps.",
         "sign": [
           "t"
         ]
@@ -1014,6 +1208,15 @@ const DICT = [
         "sign": [
           "t"
         ]
+      }
+    ]
+  },
+  {
+    "name": "peka",
+    "type": "interjection",
+    "defs": [
+      {
+        "def": "OK; understood"
       }
     ]
   },
@@ -1246,7 +1449,7 @@ const DICT = [
   },
   {
     "name": "s\u0131",
-    "type": "verbone",
+    "type": "verbtwo",
     "arity": "1",
     "defs": [
       {
@@ -1264,7 +1467,7 @@ const DICT = [
     ]
   },
   {
-    "name": "sia",
+    "name": "s\u0131a",
     "type": "verbone",
     "arity": "1",
     "defs": [
@@ -1425,6 +1628,39 @@ const DICT = [
     ]
   },
   {
+    "name": "ter",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a question.",
+        "sign": [
+          "x"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "t\u0131",
+    "type": "verbtwo",
+    "arity": "2",
+    "defs": [
+      {
+        "def": "\u25af is at \u25af.",
+        "sign": [
+          "tt",
+          "0t"
+        ]
+      },
+      {
+        "def": "\u25af happens while \u25af happens.",
+        "sign": [
+          "xx"
+        ]
+      }
+    ]
+  },
+  {
     "name": "t\u0131om",
     "type": "parenthend",
     "defs": [
@@ -1502,6 +1738,20 @@ const DICT = [
     ]
   },
   {
+    "name": "uk\u0131y",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af is a message.",
+        "sign": [
+          "t",
+          "q"
+        ]
+      }
+    ]
+  },
+  {
     "name": "va",
     "type": "conj",
     "defs": [
@@ -1516,6 +1766,19 @@ const DICT = [
     "defs": [
       {
         "def": "but"
+      }
+    ]
+  },
+  {
+    "name": "van",
+    "type": "verbone",
+    "arity": "1",
+    "defs": [
+      {
+        "def": "\u25af never happens.",
+        "sign": [
+          "x"
+        ]
       }
     ]
   },
@@ -1567,6 +1830,19 @@ const DICT = [
     "defs": [
       {
         "def": "average of"
+      }
+    ]
+  },
+  {
+    "name": "vem",
+    "type": "verbtwo",
+    "arity": "2",
+    "defs": [
+      {
+        "def": "\u25af arrives to \u25af.",
+        "sign": [
+          "tt"
+        ]
       }
     ]
   },
@@ -1671,7 +1947,7 @@ const DICT = [
   },
   {
     "name": "zha",
-    "type": "verone",
+    "type": "verbone",
     "arity": "1",
     "defs": [
       {
@@ -1679,6 +1955,21 @@ const DICT = [
         "sign": [
           "q",
           "t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "zh\u0131",
+    "type": "verbtwo",
+    "arity": "2",
+    "defs": [
+      {
+        "def": "\u25af knows about \u25af.",
+        "sign": [
+          "tt",
+          "tx",
+          "tq"
         ]
       }
     ]
@@ -1771,262 +2062,11 @@ const DICT = [
     ]
   },
   {
-    "name": "bur",
-    "type": "verbtwo",
-    "arity": "1",
+    "name": "s\u0131ok",
+    "type": "concomp",
     "defs": [
       {
-        "def": "\u25af acquires/gets \u25af",
-        "sign": [
-          "tt",
-          "tx"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "h\u0131au",
-    "type": "verbtwo",
-    "arity": "2",
-    "defs": [
-      {
-        "def": "\u25af imagines \u25af.",
-        "sign": [
-          "tt",
-          "tx"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "zh\u0131",
-    "type": "verbtwo",
-    "arity": "2",
-    "defs": [
-      {
-        "def": "\u25af knows about \u25af.",
-        "sign": [
-          "tt",
-          "tx",
-          "tq"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "bam",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af explodes.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "peka",
-    "type": "int",
-    "defs": [
-      {
-        "def": "OK; understood"
-      }
-    ]
-  },
-  {
-    "name": "vem",
-    "type": "verbtwo",
-    "arity": "2",
-    "defs": [
-      {
-        "def": "\u25af arrives to \u25af.",
-        "sign": [
-          "tt"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "\u0131a",
-    "type": "int",
-    "defs": [
-      {
-        "def": "aw... (sadness)"
-      }
-    ]
-  },
-  {
-    "name": "kat",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is a layer.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "noet",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is an animal.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "b\u0131a",
-    "type": "verbtwo",
-    "arity": "2",
-    "defs": [
-      {
-        "def": "\u25af needs to satisfy property \u25af.",
-        "sign": [
-          "tx",
-          "tt"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "van",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af never happens.",
-        "sign": [
-          "x"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "ter",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is a question.",
-        "sign": [
-          "x"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "ma\u0131",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "I want \u25af to happen.",
-        "sign": [
-          "x"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "uk\u0131y",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is a message.",
-        "sign": [
-          "t",
-          "q"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "kyme",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is a community.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "bek",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af waits.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "gyr",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is a picture.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "de",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is beautiful.",
-        "sign": [
-          "t",
-          "x",
-          "q"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "chek",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is a flower.",
-        "sign": [
-          "t"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "ha",
-    "type": "verbone",
-    "arity": "1",
-    "defs": [
-      {
-        "def": "\u25af is alive.",
-        "sign": [
-          "t"
-        ]
+        "def": "idea of.../concept of"
       }
     ]
   }
