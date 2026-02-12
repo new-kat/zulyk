@@ -11,14 +11,8 @@ function zulyknumber(n) {
   if (n===0){return "dìtnam"}
   const s = n.toString();
   const maxpower = s.length-1;
-  const result = [...s].map((d, i) => digits.at(+d)+powers_of_ten[(maxpower - i) % 3]).join(" ");
-
-
-return result;
-
-
-  
-}
+  const result = [...s].map((d, i) => digits.at(d)+(d!=0 ? powers_of_ten[(maxpower - i) % 3]:"")).join(" ");
+return result;}
 
 function renderEntry(entry) {
   const type = entry.type ?? '';
